@@ -48,41 +48,41 @@ export default function App() {
             <NavBar />
             <Box display="flex" justifyContent="center" alignItems="flex-end">
               <Switch>
-                <Route path="/" exact>
+                <Route path="/PortfolioTest/" exact>
                   <Home />
                   <Box display="flex" alignSelf="center">
-                    <Link to="/projects">
+                    <Link to="/PortfolioTest/projects">
                       <ChevronRight className={classes.arrow} />
                     </Link>
                   </Box>
                 </Route>
 
-                <Route path="/projects">
+                <Route path="/PortfolioTest/projects">
                   <Box display="flex" alignSelf="center">
-                    <Link to="/">
+                    <Link to="/PortfolioTest/">
                       <ChevronLeft className={classes.arrow} />
                     </Link>
                   </Box>
                   <Projects />
                   <Box display="flex" alignSelf="center">
-                    <Link to="/contact">
+                    <Link to="/PortfolioTest/contact">
                       <ChevronRight className={classes.arrow} />
                     </Link>
                   </Box>
                 </Route>
 
-                <Route path="/contact">
+                <Route path="/PortfolioTest/contact">
                   <Box display="flex" alignSelf="center">
-                    <Link to="/projects">
+                    <Link to="/PortfolioTest/projects">
                       <ChevronLeft className={classes.arrow} />
                     </Link>
                   </Box>
                   <Contact />
                 </Route>
-                <Route path="/glyphbooks">
+                <Route path="/PortfolioTest/glyphbooks">
                   <Glyphbooks />
                 </Route>
-                <Route path="/anne">
+                <Route path="/PortfolioTest/anne">
                   <Anne />
                 </Route>
               </Switch>

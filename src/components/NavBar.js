@@ -47,7 +47,7 @@ export default function ButtonAppBar() {
     <AppBar position="static" color="secondary" className={classes.border}>
       <Toolbar>
         <Box flexGrow={1}>
-          <Link style={{ textDecoration: "none" }} to="/">
+          <Link style={{ textDecoration: "none" }} to="/PortfolioTest/">
             <Typography className={classes.title}>ONA LORÉ</Typography>
           </Link>
         </Box>
@@ -55,13 +55,13 @@ export default function ButtonAppBar() {
           style={{
             textDecoration: "none",
           }}
-          to="/projects"
+          to="/PortfolioTest/projects"
         >
           <Button className={classes.options} m={5}>
             Projects
           </Button>
         </Link>
-        <Link style={{ textDecoration: "none" }} to="/contact">
+        <Link style={{ textDecoration: "none" }} to="/PortfolioTest/contact">
           <Button className={classes.options}>Contact</Button>
         </Link>
       </Toolbar>
